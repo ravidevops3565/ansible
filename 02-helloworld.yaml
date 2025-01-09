@@ -1,6 +1,6 @@
 - name: Hello Playbook
   hosts: web
   tasks: 
-  - namegit : print hellow Playbook
+  - name: print hellow Playbook
     ansible.builtin.debug :
     msg: "Hey Hellow Playbooka"
