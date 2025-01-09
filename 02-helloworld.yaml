@@ -3,4 +3,4 @@
   tasks: 
   - name: print hellow Playbook
     ansible.builtin.debug :
-    msg: "Hey Hellow Playbooka"
+      msg: "Hey Hellow Playbooka"
