@@ -1,0 +1,6 @@
+- name : Variables from inventory files
+  hosts: web
+  tasks:
+  - name: print your future
+    ansible.builtin.debug:
+       msg: "It is {{ Course }},{{ Goal }}"
