@@ -7,7 +7,7 @@
 
   tasks:
   - name: print the variables
-    vars: # Task level variables 
+    vars: # Task level variables only within the task, task level variables can override play level variables
      Course: "Scrum Master"
      Goal: "You will pass the certification,get the job"
     ansible.builtin.debug:
