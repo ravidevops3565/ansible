@@ -1,17 +1,15 @@
 - name: PLAY1
   hosts: local
-  become: 
   conenction: local #managing its own node, no need of credentials
-  task:
+  tasks:
   - name: PLAY1 and TASK1
     ansible.builtin.debug:
        msg:"Hello Multiplay yamal file from PLAY1 and TASK1"
 
 - name: PLAY2
   hosts: local
-  become: 
   conenction: local #managing its own node, no need of credentials
-  task:
+  tasks:
   - name: PLAY2 and TASK2
     ansible.builtin.debug:
        msg:"Hello Multiplay yamal file from PLAY2 and TASK2"
