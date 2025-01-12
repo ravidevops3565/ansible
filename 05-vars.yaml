@@ -1,7 +1,10 @@
 - name:
   hosts: local
   connection: local
+  vars:
+   Course: "Devops with AWS"
+   Goal: "You will get a job immediately after the course"
   tasks:
   - name: print the variable
     ansible.builtin.debug:
-       msg: "It is AWS Devops course,study well!!"
+       msg: "It is {{ cousrse }},{{ Goal }}!!"
