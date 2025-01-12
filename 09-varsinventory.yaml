@@ -1,0 +1,7 @@
+- name : Variables from files
+  hosts: local
+  connection: local
+  tasks:
+  - name: print your future
+    ansible.builtin.debug:
+       msg: "It is {{ Course }},{{ Goal }}"
