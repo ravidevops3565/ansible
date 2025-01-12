@@ -15,4 +15,4 @@
 
   - name: print the variables 1
     ansible.builtin.debug:
-    msg: "It is {{ Course }},{{ Goal }}"
+      msg: "It is {{ Course }},{{ Goal }}"
