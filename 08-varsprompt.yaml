@@ -1,0 +1,12 @@
+- name : Variables from files
+  hosts: local
+  connection: local
+  vars_prompt:
+  - name : Course
+    prompt: "Please enter your wish"
+  - name : Goal 
+    prompt: "please enter final output"
+  tasks:
+  - name: print your future
+    ansible.builtin.debug:
+       msg: "It is {{ Course }},{{ Goal }}"
